@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD330 Final Project</title>
+    <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <img id="header-logo" src="images/nba-logo.jpg" alt="NBA logo">
+        <h1>NBA Team Info</h1>
+        <h3>Favorite Team: <span id="select-fav-team"></span></h3>
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="league.html">League</a>
+        <a href="conference.html">Confernece</a>
+        <a href="division.html">Division</a>
+        <a href="favorite-team.html">Favorite Team</a>
+        <a href="schedule.html">Schedule</a>
+    </nav>
+    <main>
+        <button><a href="league.html">League</a></button>
+        <button><a href="conference.html">Conference</a></button>
+        <button><a href="index.html">Division</a></button>
+        <button><a href="index.html">Favorite Team</a></button>
+        <button><a href="index.html">Schedule</a></button>
+
+        <p id="welcome-msg">
+            Thanks for visiting our page and showing an interest in the NBA!
+            Our goal is to present all of the base knowledge about the teams
+            and the players that play on the teams. Please select a tab above
+            to get started! Once again, thanks for visiting!
+        </p>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="scripts/responsive-menu.js"></script>
 </body>
 </html>
