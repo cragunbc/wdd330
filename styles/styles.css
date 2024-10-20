@@ -1,23 +1,26 @@
 * {
     margin: 0;
+    font-family: Roboto;
 }
 
 header {
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
     text-align: center;
+    align-items: center;
     padding: 10px;
     background-color: blue;
+    color: white;
 }
 
 #header-logo {
     width: 150px;
     height: 120px;
-    display: block;
+    display: inline;
 }
 
 #menu {
-    font-size: 1.5rem;
+    font-size: 1rem;
     border: 1px solid black;
     padding: 3px 7px 6px;
     background-color: gray;
@@ -51,7 +54,7 @@ header {
     text-decoration: none;
     color: #fff;
     font-size: 25px;
-    font-family: Merriweather;
+    font-family: Roboto;
 }
 
 .navigation a:hover {
@@ -64,6 +67,109 @@ header {
     display: block;
 }
 
+.button-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 20px;
+}
+
+.button-nav button {
+    margin: 20px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+#basketball {
+    width: 100%;
+    height: 100%;
+}
+
 #welcome-msg {
     font-size: 55px;
+    text-align: center;
+    padding: 35px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+    color: white;
+    padding: 40px;
+    font-size: 20px;
+}
+
+/* Player Stats Page */
+
+#stats-header {
+    text-align: center;
+}
+
+/* Conference Page */
+
+#conference-header {
+    text-align: center;
+    padding: 15px;
+}
+
+#conference-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.conference-select {
+    text-align: center;
+    padding: 20px;
+    margin: 35px;
+    font-size: 35px;
+}
+
+.teamDisplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.teamDisplay img {
+    height: auto;
+    max-width: 50%;
+    text-align: center;
+    display: block;
+}
+
+.teamDisplay p {
+    text-align: center;
+}
+
+
+/* Division Page */
+
+#division-header {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#division-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+#east-divisions {
+    grid-column: 1/2;
+}
+
+#west-divisions {
+    grid-column: 2/3;
+}
+
+.division-select {
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    font-size: 20px;
+}
+
+#east-divisions p, #west-divisions p {
+    font-size: 25px;
+    font-weight: bold;
 }

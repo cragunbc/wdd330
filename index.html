@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD330 Final Project</title>
+    <title>WDD330 Final Project Homepage</title>
     <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <img id="header-logo" src="images/nba-logo.jpg" alt="NBA logo">
         <h1>NBA Team Info</h1>
-        <h3>Favorite Team: <span id="select-fav-team"></span></h3>
+        <!-- <h3>Favorite Team: <span id="select-fav-team"></span></h3> -->
     </header>
     <button id="menu"></button>
     <nav class="navigation">
         <a href="index.html">Home</a>
-        <a href="league.html">League</a>
+        <!-- <a href="league.html">League</a> -->
         <a href="conference.html">Confernece</a>
         <a href="division.html">Division</a>
-        <a href="favorite-team.html">Favorite Team</a>
+        <a href="player-stats.html">Player Stats</a>
         <a href="schedule.html">Schedule</a>
     </nav>
+    <img id="basketball" src="images/basketball.jpg">
     <main>
-        <button><a href="league.html">League</a></button>
-        <button><a href="conference.html">Conference</a></button>
-        <button><a href="index.html">Division</a></button>
-        <button><a href="index.html">Favorite Team</a></button>
-        <button><a href="index.html">Schedule</a></button>
+        <div class="button-nav">
+            <!-- <button id="league-btn">League</button> -->
+            <button id="conference-btn">Conference</button>
+            <button id="division-btn">Division</button>
+            <button id="player-stats-btn">Player Stats</button>
+            <button id="schedule-btn">Schedule</button>
+        </div>
 
         <p id="welcome-msg">
             Thanks for visiting our page and showing an interest in the NBA!
@@ -36,8 +39,11 @@
         </p>
     </main>
     <footer>
-
+        <p>Brantley Cragun</p>
+        <p>WDD330 Final Project</p>
+        <p>&copy; 2024</p>
     </footer>
     <script src="scripts/responsive-menu.js"></script>
+    <script src="scripts/button-navigation.js"></script>
 </body>
 </html>
