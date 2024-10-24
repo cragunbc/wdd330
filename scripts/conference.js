@@ -41,6 +41,7 @@ document.getElementById("west").addEventListener("click", function () {
 
 // Declares a new function to display the teams of the conference and has the parameter of the array of teams
 function displayTeamsByConference(teams) {
+    // let newArray = teams.filter(team.response, team.logo == true);
     // Selects the element on the html file to display the teams
     let teamDisplay = document.querySelector(".teamDisplay");
     // Clears the page
@@ -49,7 +50,7 @@ function displayTeamsByConference(teams) {
     for (let team of teams) {
         // If the team doesn't have a logo it skips it
         if (!team.logo) {
-            return;
+            continue;
         }
         // Creates a section to put the info in
         const teamInfo = document.createElement("section");
