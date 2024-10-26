@@ -54,6 +54,7 @@ function displayTeamsByConference(teams) {
         }
         // Creates a section to put the info in
         const teamInfo = document.createElement("section");
+        teamInfo.className = "container";
         // Creates an <img> tag to store the team logo
         const teamLogo = document.createElement("img");
         // Creates a <p> tag to store the team name

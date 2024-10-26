@@ -193,4 +193,33 @@ h3 {
 
 section {
     padding: 20px;
+    align-items: center;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container p {
+    padding: 20px;
+}
+
+.teamSelect p {
+    padding: 20px;
+}
+
+#schedule-header {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
 }

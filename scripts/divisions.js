@@ -65,6 +65,7 @@ function displayTeamsByDivision(teams) {
             return;
         }
         const teamInfo = document.createElement("section");
+        teamInfo.className = "container";
         const teamLogo = document.createElement("img");
         const teamName = document.createElement("p");
 

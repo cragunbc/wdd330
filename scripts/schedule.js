@@ -47,7 +47,7 @@ function displayAllTeams(teams) {
         teamDisplay.appendChild(teamInfo);
 
         teamInfo.addEventListener("click", function() {
-            window.location.href = "league.html";
+            window.location.href = "schedule-display.html";
             localStorage.setItem("team-id", team.id);
         });
         
